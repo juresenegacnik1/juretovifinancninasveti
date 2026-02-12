@@ -1,2 +1,2 @@
 # juretovifinancninasveti
-Juretovi financni nasveti
+Juretovi finančni nasveti je spletna stran o finančnih nasvetih.
