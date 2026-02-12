@@ -59,10 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Add a simple console message
-    console.log('💰 Dobrodošli pri Juretovih Finančnih Nasvetih!');
-    console.log('Spletna stran je pripravljena za uporabo.');
 });
 
 // Savings calculator function
