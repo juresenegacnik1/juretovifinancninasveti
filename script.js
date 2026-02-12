@@ -9,8 +9,9 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Add smooth scrolling to all navigation links
+// Initialize all functionality when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scrolling to all navigation links
     const navLinks = document.querySelectorAll('.nav-links a');
     
     navLinks.forEach(link => {
@@ -48,6 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
     tipCards.forEach(card => {
         observer.observe(card);
     });
+    
+    // Add enter key support for calculator inputs
+    const inputs = document.querySelectorAll('.calculator-input input');
+    inputs.forEach(input => {
+        input.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                calculateSavings();
+            }
+        });
+    });
+    
+    // Add a simple console message
+    console.log('💰 Dobrodošli pri Juretovih Finančnih Nasvetih!');
+    console.log('Spletna stran je pripravljena za uporabo.');
 });
 
 // Savings calculator function
@@ -129,18 +144,3 @@ function showResult(message, type = 'success') {
     }
 }
 
-// Add enter key support for calculator inputs
-document.addEventListener('DOMContentLoaded', function() {
-    const inputs = document.querySelectorAll('.calculator-input input');
-    inputs.forEach(input => {
-        input.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                calculateSavings();
-            }
-        });
-    });
-});
-
-// Add a simple console message
-console.log('💰 Dobrodošli pri Juretovih Finančnih Nasvetih!');
-console.log('Spletna stran je pripravljena za uporabo.');
