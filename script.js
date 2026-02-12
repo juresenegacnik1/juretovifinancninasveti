@@ -143,4 +143,3 @@ function showResult(message, type = 'success') {
         resultDiv.style.color = '#2c3e50';
     }
 }
-
