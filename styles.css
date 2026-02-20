@@ -243,6 +243,74 @@ header {
     animation: fadeIn 0.5s ease;
 }
 
+/* Mistakes Section */
+.mistakes-section {
+    padding: 4rem 0;
+    background-color: var(--background-color);
+}
+
+.mistakes-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.mistakes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.mistake-category {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border-left: 5px solid var(--accent-color);
+}
+
+.mistake-category:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.mistake-category h3 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mistake-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mistake-category li {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    padding-left: 0;
+    line-height: 1.8;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.mistake-category li:last-child {
+    margin-bottom: 0;
+}
+
+.mistake-category li::before {
+    content: '•';
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+}
+
 /* Contact Section */
 .contact-section {
     padding: 4rem 0;
