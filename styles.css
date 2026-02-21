@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -258,7 +258,7 @@ header {
 
 .mistakes-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
 }
 
@@ -428,5 +428,9 @@ footer p {
     .calculator-section h2,
     .contact-section h2 {
         font-size: 2rem;
+    }
+
+    .mistakes-container {
+        grid-template-columns: 1fr;
     }
 }
